@@ -1,0 +1,159 @@
+:root{
+    --color1: #ccd0fc;
+    --color2:#9BA8AB;
+    --color3:#4A5C6A;
+    --color4:#253745;
+    --color5:#11212d;
+    --color6:#06141B;
+    --color7:#a87b5c;
+
+    --h1-family:"Bebas Neue", sans-serif;
+    --h1-size:150px;
+
+    --h2-size:70px;
+    --h2-family:"Bebas Neue", sans-serif;
+    --p-size:25px;
+    --p-family:"Montserrat", sans-serif;
+
+    --border1:1px solid red;
+    --border2:1px solid blue;
+    --border3:1px solid green;
+
+    /* smaller desktop screen */
+
+    --h1-size-small:30px;
+    --h2-size-small:20px;
+    --p-size-small:15px;
+}
+
+@media screen and (max-width:1369px){
+
+    .tc1 h1{
+        font-size: clamp(30px, 80px, 90px);
+    }
+    .tc1 h2, .abtme-class h2, .experience-box h2, .port-div h2, .contact-box h2 ,.skill-div h2{
+        font-size: clamp(20px,50px,60px) ;
+    }
+    .abtme-class h3{
+        font-size: clamp(20px,30px,35px);
+    }
+    .exp-cell:hover h3{
+        font-size: 31px;
+    }
+    p, .context{
+        font-size: 15px;
+    }
+    .tc2 {
+        width: 23%;
+    }
+    .tc2 img{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+        
+    .arrowButton{
+        display: block;
+    }
+    p, .experience-box .context{
+        font-size: 15px;
+    }
+    body{
+        overflow-y: auto;
+    }
+    .container{
+        flex-wrap: wrap;
+        height: 200%;
+    }
+    .tc1, .tc2{
+        width: 50%;
+    }
+    .tc2 {
+        border-bottom:1px solid var(--color7);
+        border-bottom-left-radius:20px ;
+        border-bottom-right-radius:20px ;
+
+        text-align: center;
+        
+    }
+    .tc2 img{
+        width: 250px;
+        margin: 0px auto ;
+ 
+    }
+    .tc3 {
+        width: 100%;
+    }
+
+    .tc1 h1{
+        font-size: 80px;
+    }
+    .tc1 h2{
+        font: 50px;
+    }
+     .abtme-class h2, .experience-box h2, .port-div h2, .contact-box h2 ,.skill-div h2{
+        font-size:30px;
+    }
+
+    .experience-box h3{
+        font-size: 25px;
+    }
+
+    .button-div{
+        position: sticky;
+        top: 0px;
+    }
+    
+    .arrowButton{
+        z-index: 100;
+        position: fixed;
+        bottom: 25px;
+        right: 60px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .tc1 h1{
+        font-size: 50px;
+    }
+    .tc1 h2{
+        font: 30px;
+    }
+     .abtme-class h2, .port-div h2, .contact-box h2 ,.skill-div h2{
+        font-size:20px;
+    }
+}
+
+
+@media screen and (max-width:502px){
+    .container{
+        padding: 10px;
+    }
+    .tc2 {
+        display: none;
+    }
+    .tc1, .tc3{
+        width: 100%;
+        text-align: center;
+    }
+    .portfolio-box a{
+        font-size: 15px;
+    }
+    .button-div{
+        justify-content: center;
+    }
+    .abtme-class h2, .experience-box h2, .port-div h2, .contact-box h2 ,.skill-div h2{
+        font-size:35px;
+
+    }
+
+    .abtme-class, .experience-box, .port-div, .contact-box ,.skill-div{
+        padding: 5px;
+    }
+
+    .logo-container{
+        flex-direction: column;
+    }
+}
