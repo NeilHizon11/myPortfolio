@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/assets/logo/mylogo.jpeg">
     <title>Neil Hizon</title>
 
     <!-- AOS library -->
@@ -29,7 +31,7 @@
                 <p>Creative front-end developer skilled in HTML, CSS, and JavaScript, passionate about crafting user-friendly web experiences.</p>
                 <div class="button-div">
                     <div class="button-boxes">
-                        <a href="./assets/NeilJhonHizon_resume.pdf">
+                        <a href="./assets/NeilJhonHizon_resume.pdf" target="_blank">
                             <button>Resume</button>
                         </a>
                     </div>
@@ -105,6 +107,10 @@
                         <div class="sl-box">
                             <img src="./assets/logo/javascript-portable-network-graphics-logo-clip-art-computer-icons-vue-js-9035043883d01b0f5133f7dd586d0abd.png" alt="JaaScript">
                             <p>JavaScript</p>
+                        </div>
+                        <div class="sl-box">
+                            <img src="./assets/logo/react.png" alt="ReactJS">
+                            <p>Bootstrap</p>
                         </div>
                         <div class="sl-box">
                             <img src="./assets/logo/bootstrap-logo-computer-software-web-application-portable-document-format-b-185f0fb25fd5838e810618a7fa90e98a-1536x1536.png" alt="Bootstrap">
@@ -217,27 +223,44 @@
                     </div>
                 </div>
                 <div class="port-div port-class"  data-aos="fade" style="display: none!important;" id="port-div-id">
-                    <h2>Portfolio</h2>
-                    <div class="portfolio-box">
-                        <a href="https://dev-neil-hizon-port.pantheonsite.io/oow/"><img src="./assets/ARTAC2.png" alt="Art Academy">
-                        <h3>Art Academy</a></h3>
+                    <div class="portfolio-choice">
+                        <h2 class="wordpress-btn" id="active-port" onclick="showWp()">WordPress</h2>
+                        <h2 class="react-btn" onclick="showReact()">React</h2>
                     </div>
-                    <div class="portfolio-box">
-                        <a href="https://dev-mentalhealthph.pantheonsite.io/"><img src="./assets/mentalhealth.png" alt="Mental Health Ph">
-                        <h3>Mental Health Ph</a></h3>
+                    <div class="wordpress-div">
+                        
+                        
+                        <div class="portfolio-box">
+                            <a href="https://dev-neil-hizon-port.pantheonsite.io/oow/" target="_blank"><img src="./assets/ARTAC2.png" alt="Art Academy">
+                            <h3>Art Academy</a></h3>
+                        </div>
+                        <div class="portfolio-box">
+                            <a href="https://dev-mentalhealthph.pantheonsite.io/" target="_blank"><img src="./assets/mentalhealth.png" alt="Mental Health Ph">
+                            <h3>Mental Health Ph</a></h3>
+                        </div>
+                        <div class="portfolio-box">
+                            <a href="https://dev-neil-hizon-port.pantheonsite.io/kava-restaurant/" target="_blank"><img src="./assets/kaveh.png" alt="Kaveh Restaurant">
+                            <h3>Kava Restaurant</a></h3>
+                        </div>
+                        <div class="portfolio-box">
+                            <a href="https://dev-neil-hizon-port.pantheonsite.io/elementor-439/" target="_blank"><img src="./assets/nature.png" alt="Nature website">
+                            <h3>Nature</a></h3>
+                        </div>
+                        <div class="portfolio-box">
+                            <a href="https://neilhizon11.github.io/JHSerano-Services/" target="_blank"><img src="./assets/jhserano.png" alt="Services">
+                            <h3>JHSerano - Service Page</a></h3>
+                        </div>
                     </div>
-                    <div class="portfolio-box">
-                        <a href="https://dev-neil-hizon-port.pantheonsite.io/kava-restaurant/"><img src="./assets/kaveh.png" alt="Kaveh Restaurant">
-                        <h3>Kava Restaurant</a></h3>
+                    <div class="react-div">
+                        <div class="portfolio-box">
+                            <a href="https://daily-nasa-images.netlify.app/" target="_blank"><img src="./assets/APOD.png" alt="Daily NASA Images">
+                            <h3>Daily NASA Images</a></h3>
+                        </div>
+
                     </div>
-                    <div class="portfolio-box">
-                        <a href="https://dev-neil-hizon-port.pantheonsite.io/elementor-439/"><img src="./assets/nature.png" alt="Nature website">
-                        <h3>Nature</a></h3>
-                    </div>
-                    <div class="portfolio-box">
-                        <a href="https://neilhizon11.github.io/JHSerano-Services/"><img src="./assets/jhserano.png" alt="Nature website">
-                        <h3>JHSerano - Service Page</a></h3>
-                    </div>
+
+                    
+
 
                 </div>
                 <div class="contact-div contact-class" data-aos="fade" style="display: none!important;" id="contact-div-id">
