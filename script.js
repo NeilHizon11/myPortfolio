@@ -1,18 +1,12 @@
 function hideAllColumn() {
-
-    
     document.querySelector(".abtme-class").style.display = "none";
     document.querySelector(".exp-class").style.display = "none";
     document.querySelector(".port-class").style.display = "none";
     document.querySelector(".contact-class").style.display = "none";
     document.querySelector(".skill-class").style.display = "none";
-
 }
 
 function showAboutMe() {
-    // hideAllColumn();
-    // document.querySelector(".abtme-class").style.display = "block";
-
     var removeId = document.querySelector("#active-button");
     removeId.removeAttribute('id');
 
@@ -24,9 +18,6 @@ function showAboutMe() {
 
 
 function showSkill() {
-    // hideAllColumn();
-    // document.querySelector(".exp-class").style.display = "block";
-
     var removeId = document.querySelector("#active-button");
     removeId.removeAttribute('id');
 
@@ -35,9 +26,6 @@ function showSkill() {
 }
 
 function showExp() {
-    // hideAllColumn();
-    // document.querySelector(".exp-class").style.display = "block";
-
     var removeId = document.querySelector("#active-button");
     removeId.removeAttribute('id');
 
@@ -46,9 +34,6 @@ function showExp() {
 }
 
 function showPortfolio() {
-    // hideAllColumn();
-    // document.querySelector(".port-class").style.display = "block";
-
     var removeId = document.querySelector("#active-button");
     removeId.removeAttribute('id');
 
@@ -57,9 +42,6 @@ function showPortfolio() {
 }
 
 function showContact() {
-    // hideAllColumn();
-    // document.querySelector(".contact-class").style.display = "block";
-
     var removeId = document.querySelector("#active-button");
     removeId.removeAttribute('id');
 
@@ -151,3 +133,69 @@ contactBut.addEventListener('click', () => {
         }, 10); 
     }, 600); 
 });
+
+
+
+
+function showReact() {
+    var removeId = document.querySelector("#active-port");
+    removeId.removeAttribute('id');
+
+    var addId = document.querySelector(".react-btn");
+    addId.setAttribute('id', 'active-port')
+
+}
+
+function showWp() {
+    var removeId = document.querySelector("#active-port");
+    removeId.removeAttribute('id');
+
+    var addId = document.querySelector(".wordpress-btn");
+    addId.setAttribute('id', 'active-port')
+
+}
+
+
+const reactBtn = document.querySelector('.react-btn');
+const wordpressBtn = document.querySelector('.wordpress-btn');
+
+const reactDiv = document.querySelector('.react-div');
+const wordpressDiv = document.querySelector('.wordpress-div');
+
+function portfolioZeroOpac() {
+    reactDiv.style.opacity = 0;
+    wordpressDiv.style.opacity = 0;
+}
+
+function hideAllPort() {
+    document.querySelector('.react-div').style.display = 'none';
+    document.querySelector('.wordpress-div').style.display = 'none';
+}
+
+
+
+reactBtn.addEventListener('click', () => {
+    portfolioZeroOpac()
+    setTimeout(() => {
+        hideAllPort()
+
+        reactDiv.style.display = 'block';
+        setTimeout(() => {
+            reactDiv.style.opacity = 1;
+        }, 10); 
+    }, 600);
+});
+
+wordpressBtn.addEventListener('click', () => {
+    portfolioZeroOpac()
+    setTimeout(() => {
+        hideAllPort()
+
+        wordpressDiv.style.display = 'block';
+        setTimeout(() => {
+            wordpressDiv.style.opacity = 1;
+        }, 10); 
+    }, 600);
+})
+
+
