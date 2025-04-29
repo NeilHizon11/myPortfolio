@@ -155,12 +155,23 @@ function showWp() {
 
 }
 
+function showDuda() {
+    var removeId = document.querySelector("#active-port");
+    removeId.removeAttribute('id');
+
+    var addId = document.querySelector(".duda-btn");
+    addId.setAttribute('id', 'active-port')
+
+}
+
 
 const reactBtn = document.querySelector('.react-btn');
 const wordpressBtn = document.querySelector('.wordpress-btn');
+const dudaBtn = document.querySelector('.duda-btn');
 
 const reactDiv = document.querySelector('.react-div');
 const wordpressDiv = document.querySelector('.wordpress-div');
+const dudaDiv = document.querySelector('.duda-div');
 
 function portfolioZeroOpac() {
     reactDiv.style.opacity = 0;
@@ -170,6 +181,7 @@ function portfolioZeroOpac() {
 function hideAllPort() {
     document.querySelector('.react-div').style.display = 'none';
     document.querySelector('.wordpress-div').style.display = 'none';
+    document.querySelector('.duda-div').style.display = 'none';
 }
 
 
@@ -194,6 +206,18 @@ wordpressBtn.addEventListener('click', () => {
         wordpressDiv.style.display = 'block';
         setTimeout(() => {
             wordpressDiv.style.opacity = 1;
+        }, 10); 
+    }, 600);
+})
+
+dudaBtn.addEventListener('click', () => {
+    portfolioZeroOpac()
+    setTimeout(() => {
+        hideAllPort()
+
+        dudaDiv.style.display = 'block';
+        setTimeout(() => {
+            dudaDiv.style.opacity = 1;
         }, 10); 
     }, 600);
 })
