@@ -60,7 +60,7 @@ p{
     width: 33%
 }
 .tc1{
-    /* border: 1px solid red; */
+    padding: 50px 20px;
 }
 .tc1 h1{
     font-family: var(--h1-family);
@@ -265,7 +265,9 @@ p{
         transition: 0.6s;
     }
 
-    .portfolio-choice .wordpress-btn, .portfolio-choice .react-btn{
+    .portfolio-choice .wordpress-btn,
+    .portfolio-choice .react-btn,
+    .portfolio-choice .duda-btn{
         color: var(--color2);
         transition: 0.6s;
     }
@@ -412,5 +414,6 @@ p{
         filter: sepia(0%);
         width: 90%;
     }
+
 
 
